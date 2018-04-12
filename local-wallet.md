@@ -70,6 +70,6 @@ Wallets:
 
 Finally, create your default wallet by running the following command:
 
-`cleos wallet create`
+`$ cleos wallet create`
 
 This should output a password for your wallet. **Keep this password somewhere safe.** If you lose it, it will almost be impossible to access it again, which could jeopardize your access to your accounts on the blockchain. For one last check, go to your eosio-wallet directory. You should find a file called default.wallet, which means that your wallet has been created successfully!
