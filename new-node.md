@@ -1,6 +1,5 @@
 # Build a new node from scratch
 
-**Replace \<user> with your user account (e.g. ubuntu)**
 ### Clone into new folder
 ```shell
 cd /opt
@@ -22,7 +21,7 @@ cd build
 make install
 ```
 
-### Validate after build (replace <user> with your user)
+### Validate after build (replace \<user> with your user)
 ```shell
 /home/<user>/opt/mongodb/bin/mongod -f /home/<user>/opt/mongodb/mongod.conf &
 cd /home/<user>/opt/eos/build; make test
