@@ -21,6 +21,30 @@ cd build
 make install
 ```
 
+If EOS built with no errors, then you may skip the **Build Error** step.
+
+### Build error
+
+After running `./eosio_build.sh`, you could receive a CMake error. There are typically two workarounds to this problem.
+
+#### 1. Manual Build
+
+If you cloned the eos folder into your home directory, you can run the following commands exactly. Otherwise, you may have to edit the directories in the commands as necessary.
+
+```
+cd ~
+mkdir -p ~/eos/build && cd ~/eos/build
+cmake -DBINARYEN_BIN=~/binaryen/bin -DWASM_ROOT=~/wasm-compiler/llvm -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl -DOPENSSL_LIBRARIES=/usr/local/opt/openssl/lib ..
+make -j$( nproc )
+```
+
+#### 2. Clean Install Dependencies (again)
+
+The commands for manually installing the dependencies can be found below.
+
+https://github.com/EOSIO/eos/tree/dawn-v3.0.0#clean-install-ubuntu-1604--linux-mint-18
+
+
 ### Validate after build (replace \<user> with your user)
 ```shell
 /home/<user>/opt/mongodb/bin/mongod -f /home/<user>/opt/mongodb/mongod.conf &
