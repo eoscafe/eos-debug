@@ -2,6 +2,8 @@
 
 When running a nodeos on a testnet, it is important that you run your wallet daemon (keosd) locally. Make sure that the `wallet_api_plugin` and `wallet_plugin` are disabled in the config.ini of nodeos. The wallet holds valuable keys that gives you permission to control your account. If the wallet is run on nodeos while connected testnet with other nodes, it could be possible for others to access your wallet, leaving the data stored in it vulnerable.
 
+## Starting up keosd
+
 To begin with, let's run keosd.
 
 `$ keosd`
@@ -28,6 +30,8 @@ It should output something like this:
 
 Exit out of wallet using `ctrl-C`
 
+## Wallet configurations
+
 By default, keosd will have created a folder called eosio-wallet in your home directory. This folder is where the config.ini file for keosd is kept, as well as the wallets.
 
 Your config.ini file should look so like this:
@@ -52,6 +56,8 @@ plugin = eosio::wallet_plugin
 ```
 
 Edit the config.ini file so that <wallet-port> is different from the port that nodeos is running on. For example, if nodeos has its `http-server-endpoint` set to port 8888, you could use port 8887 for you wallet. Save and exit the config.ini file.
+
+## Run basic wallet commands
 
 Now, you're ready to use your wallet! Let's run keosd again.
 
