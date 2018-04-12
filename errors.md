@@ -3,4 +3,4 @@
 ####Error:
 `Peer network version does not match expected 805 but got -28948`  
 ####Solution:
-Error indicates outdated peer list, update peer list in config.ini
+Error indicates that some nodes have networks mismatch set to 1 in config.ini. Stop and restart your node.
