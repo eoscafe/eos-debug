@@ -4,6 +4,8 @@ We will assume that you already have an instance nodeos running, and wallet_api_
 
 If keosd is running locally, most of these commands may require the `--wallet-host <your-wallet-host> --wallet-port <your-wallet-port>` arguments after `cleos` but before the subcommands. For now, we will not be adding them into the commands below.
 
+## Setup
+
 ### Make sure wallet is unlocked
 
 `$ cleos wallet list`
@@ -21,6 +23,8 @@ You need your wallet unlocked in order to import keys that you generate. Further
 `$ cleos create key`
 
 This will generate a key pair. The public key is the one that begins with "EOS". You may share this with others, but do *not* share your private key with anyone.
+
+## Token contract
 
 ### Create token account to deploy contract
 
@@ -40,6 +44,22 @@ This gives you permission to use the "token" account created above.
 
 ### Deploy token contract
 
-You are now ready to deploy the token contract. We are starting with the token contract since it is quite basic, and has similar actions as the other contracts that we will experiment with.
+You are now ready to deploy the token contract. We are starting with the token contract as it is quite basic, and has similar actions to the other contracts that we will experiment with. 
 
-**Note:** Two very common errors that occur when using the commands below are `unknown key` errors and `permission` related errors. When you receive an `unknown key` error, double check the input of your parameters in your command. It is most likely that something went wrong there. When you receive a `permission` related error, it means that either your wallet isn't open or doesn't have the private key of the account you're calling with `-p` imported already. You could also be calling for the permission of the wrong account for that particular situation.
+Assuming you are running from your home directory:
+
+`$ cleos set contract token /path-to-eos/build/contracts/eosio.token -p token`
+
+Again, if you did not set your token account name as "token", substitute it in for "token" above.
+
+#### Something to keep in mind
+
+When working through the steps below, you may start to notice that most push action commands use this structure: `cleos push action <action-name> <account-where-contract-is-deployed> '["param-1", "param-2", ... , "param-x"]'`. It can be helpful to remember this syntax beforehand, as you will be using it quite a lot.
+
+There are also two very common errors types that occur when using the commands in the steps below. These are the `unknown key` errors and `permission` related errors. When you receive an `unknown key` error, double check the input of your parameters in your command. It is most likely that something went wrong there. When you receive a `permission` related error, it means that either your wallet isn't open, you didn't call the --wallet-host and/or --wallet-port arguments, or doesn't have the private key of the account you're calling with `-p` imported already. You could also be calling for the permission of the wrong account for that particular situation.
+
+### Token create
+
+Push the `create` action for the token contract using the command below:
+
+`$ cleos push action create token '["<your-account-name>", "<maximum-supply>", 0, 0, 0]' -p <your-account-name>`
