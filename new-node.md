@@ -44,7 +44,7 @@ The commands for manually installing the dependencies can be found below.
 
 https://github.com/EOSIO/eos/tree/dawn-v3.0.0#clean-install-ubuntu-1604--linux-mint-18
 
-After completing the steps, go back to the Manual Build step.
+After completing the steps, go back to the **Manual Build** step.
 
 ### Validate after build (replace \<user> with your user)
 ```shell
