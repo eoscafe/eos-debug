@@ -42,4 +42,4 @@ This gives you permission to use the "token" account created above.
 
 You are now ready to deploy the token contract. We are starting with the token contract since it is quite basic, and has similar actions as the other contracts that we will experiment with.
 
-
+**Note:** Two very common errors that occur when using the commands below are `unknown key` errors and `permission` related errors. When you receive an `unknown key` error, double check the input of your parameters in your command. It is most likely that something went wrong there. When you receive a `permission` related error, it means that either your wallet isn't open or doesn't have the private key of the account you're calling with `-p` imported already. You could also be calling for the permission of the wrong account for that particular situation.
