@@ -9,7 +9,7 @@
 ## **Jungle Testnet:**
 1. Generate EOS key pair from `cleos` and save it privately in a safe place:
      ```
-    ./cleos generate key
+    ./cleos create key
      ```
 2. Set up data directory
      ```
@@ -24,7 +24,7 @@
 4. Head on over to http://jungle.cryptolions.io:9898/monitor/ and come up with a jungle related animal name not taken (no capitals/spaces, only lower case alphabetical names or `.`).
 5. Create account in `cleos` with the jungle animal name (for example `lion`) and add your public:private key pair to the account.
 6. Add newly created account to wallet in `keosd`.
-6. Open up `config.ini` and do the following:
+7. Open up `config.ini` and do the following:
    * Replace line 85
       ```
       producer-name = YOUR_PB_NAME
@@ -47,13 +47,13 @@
      p2p-server-address = eoscalgary.com:9876
      ```
 
-7. Open up ports 8888 and 9876 on your router/cloud setup
-8. Start your node with the command:
+8. Open up ports 8888 and 9876 on your router/cloud setup
+9. Start your node with the command:
    ```
    ./start.sh
    ```
-9. Open up http://your_website:your_http_port/v1/chain/get_info to see if you get a JSON response. If so, your node has been correctly configured.
-10. Once your node is syncing, message Bohdan at https://t.me/jungletestnet with this information:
+10. Open up http://your_website:your_http_port/v1/chain/get_info to see if you get a JSON response. If so, your node has been correctly configured.
+11. Once your node is syncing, message Bohdan at https://t.me/jungletestnet with this information:
 
 | Server Location | Organisation | node ip/domain, | Port (http) |  Port (p2p) | producer name | your public key|
 |-----------------|--------------|-----------------|-------------|-------------|---------------|----------------|
