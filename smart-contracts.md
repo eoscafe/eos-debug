@@ -63,3 +63,12 @@ There are also two very common errors types that occur when using the commands i
 Push the `create` action for the token contract using the command below:
 
 `$ cleos push action create token '["<your-account-name>", "<maximum-supply>", 0, 0, 0]' -p <your-account-name>`
+
+The first parameter is the issuer of the currency. Later, when you are issuing currency using the token contract, you will need the permission of the issuer account define above. As the name suggest, the maximum supply is the maximum amount of that currency that can be issued. Some examples would be "1000000.0000 DOL" or "300000000.0000 WWW". From experience, "1000000 DOL" is counted as a different currency from "1000000.0000 DOL". However, you can't reuse the exact same currency name using the same contract.
+
+### Token issue
+
+Push the `issue` action for the token contract using the command below:
+
+`$ cleos push action token issue '["<your-account-name>", "<quantity>", "memo"]' -p <your-account-name>`
+
