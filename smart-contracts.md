@@ -57,7 +57,9 @@ Again, if you did not set your token account name as "token", substitute it in f
 
 #### Something to keep in mind
 
-When working through the steps below, you may start to notice that most push action commands use this structure: `cleos push action <action-name> <account-where-contract-is-deployed> '["param-1", "param-2", ... , "param-x"]'`. It can be helpful to remember this syntax beforehand, as you will be using it quite a lot.
+When working through the steps below, you may start to notice that most push action commands use this structure: 
+```./cleos push action <action-name> <account-where-contract-is-deployed> '["param-1", "param-2", ... , "param-x"]'```
+It can be helpful to remember this syntax beforehand, as you will be using it quite a lot.
 
 There are also two very common errors types that occur when using the commands in the steps below. These are the `unknown key` errors and `permission` related errors. When you receive an `unknown key` error, double check the input of your parameters in your command. It is most likely that something went wrong there. When you receive a `permission` related error, it means that either your wallet isn't open, you didn't call the --wallet-host and/or --wallet-port arguments, or doesn't have the private key of the account you're calling with `-p` imported already. You could also be calling for the permission of the wrong account for that particular situation.
 
