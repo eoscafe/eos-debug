@@ -7,7 +7,7 @@ When running a nodeos on a testnet, it is important that you run your wallet dae
 To begin with, let's run keosd.
 
 ```console
-$ keosd
+./keosd
 ```
 
 It should output something like this:
@@ -65,13 +65,13 @@ Edit the config.ini file so that <wallet-port> is different from the port that n
 Now, you're ready to use your wallet! Let's run keosd again.
 
 ```console
-./keosd
+./keosd --http-server-address localhost:8000 $@ &
 ```
 
 In another terminal window, we can run a cleos command to test if the wallet is working correctly. Whenever you use a command that requires permission from the wallet, you will need to use the --wallet-host and --wallet-port arguments as show below.
 
 ```console
-./cleos --wallet-host 127.0.0.1 --wallet-port <wallet-port> wallet list
+./cleos -H localhost -p 8888 --wallet-host localhost --wallet-port 8000 $@
 ```
 
 Assuming you are running nodeos, you will need to specify the host and port that your wallet is running on. If you set up the config.ini in the eosio-wallet directory correctly, you should get an output like this:
@@ -85,6 +85,7 @@ Finally, create your default wallet by running the following command:
 
 ```console
 ./cleos wallet create
+./cleos.sh wallet import <private key>
 ```
 
 This should output a password for your wallet. **Keep this password somewhere safe.** If your system logs are compromised, you can potentially lose access and funds associated with your account. If you lose the password, it will almost be impossible to access it again, which could jeopardize your access to your accounts on the blockchain. For one last sanity check, go to your eosio-wallet directory. You should find a file called default.wallet, which means that your wallet has been created successfully!
