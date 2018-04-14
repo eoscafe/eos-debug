@@ -22,7 +22,11 @@
    NODEOSBINDIR="/home/eos-dawn-v3.0.0/eos/build/programs/nodeos"
    ```
 4. Head on over to http://jungle.cryptolions.io:9898/monitor/ and come up with a jungle related animal name not taken (no capitals/spaces, only lower case alphabetical names or `.`).
-5. Create account in `cleos` with the jungle animal name (for example `lion`) and add your public:private key pair to the account.
+
+5. Using your new jungle animal and the local-wallet.md guide:  
+    a. Create account in `cleos` with the jungle animal name (for example `lion`)  
+    b. Create new public:private key pair  
+    c. Add your public:private key pair to your new account.
 6. Add newly created account to wallet in `keosd`.
 7. Open up `config.ini` and do the following:
    * Replace line 85
@@ -48,6 +52,7 @@
      ```
 
 8. Open up ports 8888 and 9876 on your router/cloud setup
+
 9. Start your node with the command:
    ```
    ./start.sh
