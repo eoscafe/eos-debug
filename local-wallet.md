@@ -6,11 +6,14 @@ When running a nodeos on a testnet, it is important that you run your wallet dae
 
 To begin with, let's run keosd.
 
-`$ keosd`
+```console
+$ keosd
+```
 
 It should output something like this:
 
-```27049ms thread-0   wallet_plugin.cpp:41          plugin_initialize    ] initializing wallet plugin
+```console
+27049ms thread-0   wallet_plugin.cpp:41          plugin_initialize    ] initializing wallet plugin
 27049ms thread-0   http_plugin.cpp:141           plugin_initialize    ] host: 127.0.0.1 port: 8887
 27049ms thread-0   http_plugin.cpp:144           plugin_initialize    ] configured http to listen on 127.0.0.1:8887
 27049ms thread-0   http_plugin.cpp:213           plugin_startup       ] start listening for http requests
@@ -36,7 +39,7 @@ By default, keosd will have created a folder called eosio-wallet in your home di
 
 Your config.ini file should look so like this:
 
-```
+```console
 # The local IP and port to listen for incoming http connections. (eosio::http_plugin)
 http-server-address = 127.0.0.1:<wallet-port>
 
@@ -61,11 +64,15 @@ Edit the config.ini file so that <wallet-port> is different from the port that n
 
 Now, you're ready to use your wallet! Let's run keosd again.
 
-`$ keosd`
+```console
+./keosd
+```
 
 In another terminal window, we can run a cleos command to test if the wallet is working correctly. Whenever you use a command that requires permission from the wallet, you will need to use the --wallet-host and --wallet-port arguments as show below.
 
-`$ cleos --wallet-host 127.0.0.1 --wallet-port <wallet-port> wallet list`
+```console
+./cleos --wallet-host 127.0.0.1 --wallet-port <wallet-port> wallet list
+```
 
 Assuming you are running nodeos, you will need to specify the host and port that your wallet is running on. If you set up the config.ini in the eosio-wallet directory correctly, you should get an output like this:
 
@@ -76,6 +83,8 @@ Wallets:
 
 Finally, create your default wallet by running the following command:
 
-`$ cleos wallet create`
+```console
+./cleos wallet create
+```
 
 This should output a password for your wallet. **Keep this password somewhere safe.** If your system logs are compromised, you can potentially lose access and funds associated with your account. If you lose the password, it will almost be impossible to access it again, which could jeopardize your access to your accounts on the blockchain. For one last sanity check, go to your eosio-wallet directory. You should find a file called default.wallet, which means that your wallet has been created successfully!
