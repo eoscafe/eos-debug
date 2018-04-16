@@ -13,4 +13,4 @@ EOS Cafe / Calgary and HKEOS do not own the EOS.IO software, and have no officia
 * [Local wallet setup](https://github.com/nmsz97/eos-debug/blob/master/local-wallet.md)
 * [Smart contracts](https://github.com/nmsz97/eos-debug/blob/master/smart-contracts.md)
 * [Common errors](https://github.com/nmsz97/eos-debug/blob/master/common-errors.md)
-* [Userful cleos commands](https://github.com/nmsz97/eos-debug/blob/master/cleos-commands.md
+* [Useful cleos commands](https://github.com/nmsz97/eos-debug/blob/master/cleos-commands.md)
