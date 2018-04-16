@@ -8,9 +8,9 @@ EOS Cafe / Calgary and HKEOS do not own the EOS.IO software, and have no officia
 
 ### Table of contents
 
-* [Building a new node from scratch] (https://github.com/nmsz97/eos-debug/blob/master/new-node.md)
-* [Join a testnet] (https://github.com/nmsz97/eos-debug/blob/master/joining-testnet.md)
-* [Local wallet setup] (https://github.com/nmsz97/eos-debug/blob/master/local-wallet.md)
-* [Smart contracts] (https://github.com/nmsz97/eos-debug/blob/master/smart-contracts.md)
-* [Common errors] (https://github.com/nmsz97/eos-debug/blob/master/common-errors.md)
-* [Userful cleos commands] (https://github.com/nmsz97/eos-debug/blob/master/cleos-commands.md)
+* [Building a new node from scratch](https://github.com/nmsz97/eos-debug/blob/master/new-node.md)
+* [Join a testnet](https://github.com/nmsz97/eos-debug/blob/master/joining-testnet.md)
+* [Local wallet setup](https://github.com/nmsz97/eos-debug/blob/master/local-wallet.md)
+* [Smart contracts](https://github.com/nmsz97/eos-debug/blob/master/smart-contracts.md)
+* [Common errors](https://github.com/nmsz97/eos-debug/blob/master/common-errors.md)
+* [Userful cleos commands](https://github.com/nmsz97/eos-debug/blob/master/cleos-commands.md)
