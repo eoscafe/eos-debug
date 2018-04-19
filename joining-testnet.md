@@ -53,6 +53,16 @@
 
 8. Open up ports 8888 and 9876 on your router/cloud setup
 
+Check firewall status
+```console
+sudo ufw status verbose
+```
+
+Open ports
+```console
+sudo ufw allow <port>/tcp
+```
+
 9. Start your node with the command:
    ```console
    ./start.sh
