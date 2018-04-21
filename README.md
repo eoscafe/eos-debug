@@ -1,6 +1,6 @@
 # EOS Debug: Debugging for EOS Testnets
 
-EOS Debug is a guide for EOS developers who want to download, build, and experiment with the EOS.IO software on community testnets. The work is a collaborative project between [EOS Cafe / Calgary](http://eos.cafe) and [HKEOS](http://www.hkeos.com/).
+EOS Debug is a guide for EOS developers who want to download, build, and experiment with the EOS.IO software on community testnets. The work is a collaborative project between [EOS Cafe / Calgary](http://eos.cafe) and [HKEOS](http://www.hkeos.com/). We hope that these manuals will make it easier for developers in the community to get set up, and understand the EOS.IO software better. Any feedback and suggestions are welcome!
 
 ### Disclaimer
 
