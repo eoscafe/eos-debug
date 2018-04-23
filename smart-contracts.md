@@ -183,7 +183,7 @@ The exchange contract is quite similar to the token contract; it also contains t
 ### Exchange transfer
 
 ```console
-./cleos push action exchange transfer '["<account-from>", "<account-to>", "<quantity>" "<memo>"]' -p <account-from>
+./cleos push action exchange transfer '["<account-from>", "<account-to>", "<quantity>", "<memo>"]' -p <account-from>
 ```
 
 ### Check balance
