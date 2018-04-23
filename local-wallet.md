@@ -58,20 +58,20 @@ plugin = eosio::wallet_api_plugin
 plugin = eosio::wallet_plugin
 ```
 
-Edit the config.ini file so that <wallet-port> is different from the port that nodeos is running on. For example, if nodeos has its `http-server-endpoint` set to port 8888, you could use port 8887 for you wallet. Save and exit the config.ini file.
+Edit the config.ini file so that <wallet-port> is different from the port that nodeos is running on. For example, if nodeos has its `http-server-endpoint` set to port 8888, you could use port 8000 for you wallet. Save and exit the config.ini file.
 
 ## Run basic wallet commands
 
-Now, you're ready to use your wallet! Let's run keosd again.
+Now, you're ready to use your wallet! Let's run keosd again. We'll assume that we are running nodeos on port 8888, keosd is hosted on localhost, and the wallet port is 8000.
 
 ```console
-./keosd --http-server-address localhost:8000 $@ &
+./keosd --http-server-address localhost:8000
 ```
 
 In another terminal window, we can run a cleos command to test if the wallet is working correctly. Whenever you use a command that requires permission from the wallet, you will need to use the --wallet-host and --wallet-port arguments as show below.
 
 ```console
-./cleos -H localhost -p 8888 --wallet-host localhost --wallet-port 8000 $@
+./cleos -H localhost -p 8888 --wallet-host localhost --wallet-port 8000
 ```
 
 Assuming you are running nodeos, you will need to specify the host and port that your wallet is running on. If you set up the config.ini in the eosio-wallet directory correctly, you should get an output like this:
