@@ -1,6 +1,10 @@
 # Common Errors
 
-#### Error:
+# Reminder
+Github tracks issues which you can access for EOS at https://github.com/EOSIO/eos/issues, always use that as your first search for errors.
+
+
+#### Peer Network Error:
 
 ```console
 Peer network version does not match expected 805 but got -28948
