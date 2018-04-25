@@ -1,9 +1,5 @@
 # Common Errors
 
-# Reminder
-Github tracks issues which you can access for EOS at https://github.com/EOSIO/eos/issues, always use that as your first search for errors.
-
-
 #### Peer Network Error:
 
 ```console
@@ -21,3 +17,8 @@ While experimenting with the dice contract, the members of the Jungle Testnet re
 #### Solution:
 
 ~~Don't use that stupid contract~~ Update to a more recent tag (must be higher than dawn-v3.0.0) or `master` branch.
+
+
+## Reminder
+Github tracks issues which you can access for EOS at https://github.com/EOSIO/eos/issues, always use that as your first search for errors.
+
