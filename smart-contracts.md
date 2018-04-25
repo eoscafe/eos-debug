@@ -71,7 +71,7 @@ Again, if you did not set your token account name as "token", substitute it in f
 
 When working through the steps below, you may start to notice that most push action commands use this structure:
 ```console
-cleos push action <account-where-contract-is-deployed> <action-name> '["param-1", "param-2", ... , "param-x"]'
+./cleos push action <account-where-contract-is-deployed> <action-name> '["param-1", "param-2", ... , "param-x"]'
 ```
 It can be helpful to remember this syntax beforehand, as you will be using it quite a lot.
 
