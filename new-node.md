@@ -21,7 +21,8 @@ cd build
 make install
 ```
 
-If EOS built with no errors, then you may skip the **Build Error** step.
+Master branch may have breaking changes, if you want a more stable version, you can use `git checkout dawn-v3.0.0
+` or `git checkout DAWN-2018-04-23-ALPHA`. If EOS built with no errors, then you may skip the **Build Error** step.
 
 ### Build error
 
