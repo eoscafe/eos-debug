@@ -17,7 +17,7 @@
       cd /opt/JungleTestnet
       chmod 777 start.sh stop.sh
      ```
-3. Open up `start.sh` and replace the directory with your EOS node directory (e.g. /opt/eos)
+3. Open up `start.sh` and replace the directory with your EOS node directory (e.g. /home/eos-dawn-v3.0.0)
    ```console
    NODEOSBINDIR="/home/eos-dawn-v3.0.0/eos/build/programs/nodeos"
    ```
