@@ -1,6 +1,6 @@
 # Common Errors
 
-#### IO Stream
+### IO Stream
 ```
 2356017ms main.cpp:63 main ] 13 St9exception: basic_ios::clear: iostream error
 basic_ios::clear: iostream error:
@@ -13,7 +13,7 @@ chain_plugin.cpp:257 plugin_startup
 ./nodeos --resync-blockchain
 ```
 
-#### Peer Network Error:
+### Peer Network Error:
 
 ```console
 Peer network version does not match expected 805 but got -28948
@@ -23,7 +23,7 @@ Peer network version does not match expected 805 but got -28948
 
 Error indicates that some nodes have networks mismatch set to 1 in config.ini. Stop and restart your node.
 
-#### Dice-of-death Error
+### Dice-of-death Error
 
 While experimenting with the dice contract, the members of the Jungle Testnet realized that trying to push an action would crash most of the nodes.
 
