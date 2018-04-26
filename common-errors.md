@@ -1,5 +1,18 @@
 # Common Errors
 
+#### IO Stream
+```
+2356017ms main.cpp:63 main ] 13 St9exception: basic_ios::clear: iostream error
+basic_ios::clear: iostream error:
+{"my->genesis_file.generic_string()":"/usr/eos/build/genesis.json","what":"basic_ios::clear: iostream error"}
+chain_plugin.cpp:257 plugin_startup
+```
+
+#### Solution:
+```
+./nodeos --resync-blockchain
+```
+
 #### Peer Network Error:
 
 ```console
