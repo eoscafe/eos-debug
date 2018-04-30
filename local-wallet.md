@@ -1,5 +1,7 @@
 # Local Wallet Setup
 
+** Note: ** Starting from ALPHA 27 Tag of EOS, Host and port options (-H, —wallet-host, etc.) have been replaced with -u/--url and —wallet-url
+
 When running a nodeos on a testnet, it is important that you run your wallet daemon (keosd) locally. Make sure that the `wallet_api_plugin` and `wallet_plugin` are disabled in the config.ini of nodeos. The wallet holds valuable keys that gives you permission to control your account. If the wallet is run on nodeos while connected testnet with other nodes, it could be possible for others to access your wallet, leaving the data stored in it vulnerable.
 
 ## Starting up keosd
