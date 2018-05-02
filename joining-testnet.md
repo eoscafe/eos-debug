@@ -38,7 +38,7 @@
       producer-name = lion
       ```
 
-   *  Delete line 84
+   *  Add your public and private key
       ```console
       private-key = ["YOUR_PUBKEY","YOUR_PRIVKEY"]
       ```
