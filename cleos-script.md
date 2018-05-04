@@ -4,7 +4,7 @@ If you have a local wallet running and multiple nodes running for different test
 
 ### Set up local wallet
 
-Check the local-wallet [guide] (https://github.com/eoscafe/eos-debug/blob/master/local-wallet.md) to set up keosd, the wallet daemon.
+Check the local-wallet [guide](https://github.com/eoscafe/eos-debug/blob/master/local-wallet.md) to set up keosd, the wallet daemon.
 
 ### Create script
 
